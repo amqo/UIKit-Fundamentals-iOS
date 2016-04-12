@@ -19,18 +19,13 @@ class RollViewController: UIViewController {
         // Return a more convenient Int, initialized with the random value
         return Int(randomValue)
     }
-
-    @IBAction func rollTheDice() {
-        var controller: DiceViewController
-        
-        controller = self.storyboard?.instantiateViewControllerWithIdentifier("DiceViewController") as! DiceViewController
-        
-        controller.firstValue = self.randomDiceValue()
-        controller.secondValue = self.randomDiceValue()
-        
-        presentViewController(controller, animated: true, completion: nil)
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "rollDice") {
+            let diceController = segue.destinationViewController as! DiceViewController
+            diceController.firstValue = self.randomDiceValue()
+            diceController.secondValue = self.randomDiceValue()
+        }
     }
-    
-    
 }
 

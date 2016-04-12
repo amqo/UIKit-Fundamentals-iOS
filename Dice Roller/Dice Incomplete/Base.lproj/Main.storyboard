@@ -27,7 +27,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="rollTheDice" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5fO-Tp-PuN"/>
+                                    <segue destination="qUR-90-axl" kind="modal" identifier="rollDice" id="ALg-n6-Etk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -98,6 +98,7 @@
                             <outletCollection property="gestureRecognizers" destination="o8S-Co-8tn" appends="YES" id="qTe-qd-igR"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="xeR-tZ-T1l"/>
                     <connections>
                         <outlet property="firstDie" destination="r8F-NY-C0r" id="3Xg-2o-Wy0"/>
                         <outlet property="secondDie" destination="auL-3f-b4I" id="YMe-DP-Igq"/>
