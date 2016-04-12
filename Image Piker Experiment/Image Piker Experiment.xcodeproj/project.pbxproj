@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D353613C1CBD36210019DB2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353613B1CBD36210019DB2F /* AppDelegate.swift */; };
+		D353613E1CBD36210019DB2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353613D1CBD36210019DB2F /* ViewController.swift */; };
+		D35361411CBD36210019DB2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D353613F1CBD36210019DB2F /* Main.storyboard */; };
+		D35361431CBD36210019DB2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35361421CBD36210019DB2F /* Assets.xcassets */; };
+		D35361461CBD36210019DB2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35361441CBD36210019DB2F /* LaunchScreen.storyboard */; };
+		D35361511CBD36220019DB2F /* Image_Piker_ExperimentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35361501CBD36220019DB2F /* Image_Piker_ExperimentTests.swift */; };
+		D353615C1CBD36220019DB2F /* Image_Piker_ExperimentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353615B1CBD36220019DB2F /* Image_Piker_ExperimentUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D353614D1CBD36220019DB2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D35361301CBD36210019DB2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D35361371CBD36210019DB2F;
+			remoteInfo = "Image Piker Experiment";
+		};
+		D35361581CBD36220019DB2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D35361301CBD36210019DB2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D35361371CBD36210019DB2F;
+			remoteInfo = "Image Piker Experiment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D35361381CBD36210019DB2F /* Image Piker Experiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Piker Experiment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D353613B1CBD36210019DB2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D353613D1CBD36210019DB2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D35361401CBD36210019DB2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D35361421CBD36210019DB2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D35361451CBD36210019DB2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D35361471CBD36210019DB2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D353614C1CBD36220019DB2F /* Image Piker ExperimentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image Piker ExperimentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D35361501CBD36220019DB2F /* Image_Piker_ExperimentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_Piker_ExperimentTests.swift; sourceTree = "<group>"; };
+		D35361521CBD36220019DB2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D35361571CBD36220019DB2F /* Image Piker ExperimentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image Piker ExperimentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D353615B1CBD36220019DB2F /* Image_Piker_ExperimentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_Piker_ExperimentUITests.swift; sourceTree = "<group>"; };
+		D353615D1CBD36220019DB2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D35361351CBD36210019DB2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D35361491CBD36220019DB2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D35361541CBD36220019DB2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D353612F1CBD36210019DB2F = {
+			isa = PBXGroup;
+			children = (
+				D353613A1CBD36210019DB2F /* Image Piker Experiment */,
+				D353614F1CBD36220019DB2F /* Image Piker ExperimentTests */,
+				D353615A1CBD36220019DB2F /* Image Piker ExperimentUITests */,
+				D35361391CBD36210019DB2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D35361391CBD36210019DB2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D35361381CBD36210019DB2F /* Image Piker Experiment.app */,
+				D353614C1CBD36220019DB2F /* Image Piker ExperimentTests.xctest */,
+				D35361571CBD36220019DB2F /* Image Piker ExperimentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D353613A1CBD36210019DB2F /* Image Piker Experiment */ = {
+			isa = PBXGroup;
+			children = (
+				D353613B1CBD36210019DB2F /* AppDelegate.swift */,
+				D353613D1CBD36210019DB2F /* ViewController.swift */,
+				D353613F1CBD36210019DB2F /* Main.storyboard */,
+				D35361421CBD36210019DB2F /* Assets.xcassets */,
+				D35361441CBD36210019DB2F /* LaunchScreen.storyboard */,
+				D35361471CBD36210019DB2F /* Info.plist */,
+			);
+			path = "Image Piker Experiment";
+			sourceTree = "<group>";
+		};
+		D353614F1CBD36220019DB2F /* Image Piker ExperimentTests */ = {
+			isa = PBXGroup;
+			children = (
+				D35361501CBD36220019DB2F /* Image_Piker_ExperimentTests.swift */,
+				D35361521CBD36220019DB2F /* Info.plist */,
+			);
+			path = "Image Piker ExperimentTests";
+			sourceTree = "<group>";
+		};
+		D353615A1CBD36220019DB2F /* Image Piker ExperimentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D353615B1CBD36220019DB2F /* Image_Piker_ExperimentUITests.swift */,
+				D353615D1CBD36220019DB2F /* Info.plist */,
+			);
+			path = "Image Piker ExperimentUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D35361371CBD36210019DB2F /* Image Piker Experiment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D35361601CBD36220019DB2F /* Build configuration list for PBXNativeTarget "Image Piker Experiment" */;
+			buildPhases = (
+				D35361341CBD36210019DB2F /* Sources */,
+				D35361351CBD36210019DB2F /* Frameworks */,
+				D35361361CBD36210019DB2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Image Piker Experiment";
+			productName = "Image Piker Experiment";
+			productReference = D35361381CBD36210019DB2F /* Image Piker Experiment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D353614B1CBD36220019DB2F /* Image Piker ExperimentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D35361631CBD36220019DB2F /* Build configuration list for PBXNativeTarget "Image Piker ExperimentTests" */;
+			buildPhases = (
+				D35361481CBD36220019DB2F /* Sources */,
+				D35361491CBD36220019DB2F /* Frameworks */,
+				D353614A1CBD36220019DB2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D353614E1CBD36220019DB2F /* PBXTargetDependency */,
+			);
+			name = "Image Piker ExperimentTests";
+			productName = "Image Piker ExperimentTests";
+			productReference = D353614C1CBD36220019DB2F /* Image Piker ExperimentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D35361561CBD36220019DB2F /* Image Piker ExperimentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D35361661CBD36220019DB2F /* Build configuration list for PBXNativeTarget "Image Piker ExperimentUITests" */;
+			buildPhases = (
+				D35361531CBD36220019DB2F /* Sources */,
+				D35361541CBD36220019DB2F /* Frameworks */,
+				D35361551CBD36220019DB2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D35361591CBD36220019DB2F /* PBXTargetDependency */,
+			);
+			name = "Image Piker ExperimentUITests";
+			productName = "Image Piker ExperimentUITests";
+			productReference = D35361571CBD36220019DB2F /* Image Piker ExperimentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D35361301CBD36210019DB2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Alberto;
+				TargetAttributes = {
+					D35361371CBD36210019DB2F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D353614B1CBD36220019DB2F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D35361371CBD36210019DB2F;
+					};
+					D35361561CBD36220019DB2F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D35361371CBD36210019DB2F;
+					};
+				};
+			};
+			buildConfigurationList = D35361331CBD36210019DB2F /* Build configuration list for PBXProject "Image Piker Experiment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D353612F1CBD36210019DB2F;
+			productRefGroup = D35361391CBD36210019DB2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D35361371CBD36210019DB2F /* Image Piker Experiment */,
+				D353614B1CBD36220019DB2F /* Image Piker ExperimentTests */,
+				D35361561CBD36220019DB2F /* Image Piker ExperimentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D35361361CBD36210019DB2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35361461CBD36210019DB2F /* LaunchScreen.storyboard in Resources */,
+				D35361431CBD36210019DB2F /* Assets.xcassets in Resources */,
+				D35361411CBD36210019DB2F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D353614A1CBD36220019DB2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D35361551CBD36220019DB2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D35361341CBD36210019DB2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D353613E1CBD36210019DB2F /* ViewController.swift in Sources */,
+				D353613C1CBD36210019DB2F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D35361481CBD36220019DB2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35361511CBD36220019DB2F /* Image_Piker_ExperimentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D35361531CBD36220019DB2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D353615C1CBD36220019DB2F /* Image_Piker_ExperimentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D353614E1CBD36220019DB2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D35361371CBD36210019DB2F /* Image Piker Experiment */;
+			targetProxy = D353614D1CBD36220019DB2F /* PBXContainerItemProxy */;
+		};
+		D35361591CBD36220019DB2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D35361371CBD36210019DB2F /* Image Piker Experiment */;
+			targetProxy = D35361581CBD36220019DB2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D353613F1CBD36210019DB2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D35361401CBD36210019DB2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D35361441CBD36210019DB2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D35361451CBD36210019DB2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D353615E1CBD36220019DB2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D353615F1CBD36220019DB2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D35361611CBD36220019DB2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Image Piker Experiment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amqo.Image-Piker-Experiment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D35361621CBD36220019DB2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Image Piker Experiment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amqo.Image-Piker-Experiment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D35361641CBD36220019DB2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Image Piker ExperimentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amqo.Image-Piker-ExperimentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Image Piker Experiment.app/Image Piker Experiment";
+			};
+			name = Debug;
+		};
+		D35361651CBD36220019DB2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Image Piker ExperimentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amqo.Image-Piker-ExperimentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Image Piker Experiment.app/Image Piker Experiment";
+			};
+			name = Release;
+		};
+		D35361671CBD36220019DB2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Image Piker ExperimentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amqo.Image-Piker-ExperimentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Image Piker Experiment";
+			};
+			name = Debug;
+		};
+		D35361681CBD36220019DB2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Image Piker ExperimentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amqo.Image-Piker-ExperimentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Image Piker Experiment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D35361331CBD36210019DB2F /* Build configuration list for PBXProject "Image Piker Experiment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D353615E1CBD36220019DB2F /* Debug */,
+				D353615F1CBD36220019DB2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D35361601CBD36220019DB2F /* Build configuration list for PBXNativeTarget "Image Piker Experiment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35361611CBD36220019DB2F /* Debug */,
+				D35361621CBD36220019DB2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D35361631CBD36220019DB2F /* Build configuration list for PBXNativeTarget "Image Piker ExperimentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35361641CBD36220019DB2F /* Debug */,
+				D35361651CBD36220019DB2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D35361661CBD36220019DB2F /* Build configuration list for PBXNativeTarget "Image Piker ExperimentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35361671CBD36220019DB2F /* Debug */,
+				D35361681CBD36220019DB2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D35361301CBD36210019DB2F /* Project object */;
+}
