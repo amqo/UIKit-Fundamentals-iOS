@@ -1,15 +1,17 @@
-
 //
-//  ViewController.swift
+//  RootViewController.swift
 //  BondVillains
 //
-//  Created by Jason on 11/19/14.
-//  Copyright (c) 2014 Udacity. All rights reserved.
+//  Created by Alberto Muñoz on 13/4/16.
+//  Copyright © 2016 Udacity. All rights reserved.
 //
+
+import Foundation
+
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class RootViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // Get ahold of some villains, for the table
     // This is an array of Villain instances
@@ -38,13 +40,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         return cell
     }
-
-    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
     
-    {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let detailController = self.storyboard!.instantiateViewControllerWithIdentifier("villainController") as! VillianDetailViewController
+        detailController.villain = self.allVillains[indexPath.row]
+        self.navigationController?.pushViewController(detailController, animated: true)
+    }
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
-
-
+    
+    
 }
-

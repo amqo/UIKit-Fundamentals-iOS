@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YF4-3Z-Gt7">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="BondVillains" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <viewController id="vXZ-lx-hvc" customClass="RootViewController" customModule="BondVillains" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -23,7 +24,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VillainCell" textLabel="agd-4R-Rrz" detailTextLabel="0uj-Ee-Xd9" style="IBUITableViewCellStyleSubtitle" id="e9Q-pK-HCK">
-                                        <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="86" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e9Q-pK-HCK" id="wRa-r4-Qhu">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -61,10 +62,99 @@
                             <constraint firstAttribute="trailingMargin" secondItem="lPA-QP-RAQ" secondAttribute="trailing" constant="-16" id="pb7-vx-eLn"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="VhB-Sj-aSu"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="458" y="463"/>
+            <point key="canvasLocation" x="1427" y="532"/>
+        </scene>
+        <!--Villian Detail View Controller-->
+        <scene sceneID="fgg-V0-gNw">
+            <objects>
+                <viewController storyboardIdentifier="villainController" id="yCc-9C-d1H" customClass="VillianDetailViewController" customModule="BondVillains" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pHB-DE-ubv"/>
+                        <viewControllerLayoutGuide type="bottom" id="sfc-ef-Idd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y5t-e6-xt4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6iL-a7-7h2">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PROBANDO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRd-SG-tKt">
+                                <rect key="frame" x="245" y="413" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="6iL-a7-7h2" secondAttribute="trailing" constant="74" id="3G9-Up-9uk"/>
+                            <constraint firstItem="6iL-a7-7h2" firstAttribute="top" secondItem="pHB-DE-ubv" secondAttribute="bottom" constant="201" id="6qH-JW-3MP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XRd-SG-tKt" secondAttribute="trailing" constant="133" id="Gxd-Fe-qm5"/>
+                            <constraint firstItem="XRd-SG-tKt" firstAttribute="top" secondItem="6iL-a7-7h2" secondAttribute="bottom" constant="33" id="Ldg-zg-aDW"/>
+                            <constraint firstItem="XRd-SG-tKt" firstAttribute="centerX" secondItem="y5t-e6-xt4" secondAttribute="centerX" id="Mh6-jp-SLr"/>
+                            <constraint firstItem="6iL-a7-7h2" firstAttribute="leading" secondItem="y5t-e6-xt4" secondAttribute="leadingMargin" constant="74" id="PSO-hi-uCP"/>
+                            <constraint firstItem="sfc-ef-Idd" firstAttribute="top" secondItem="XRd-SG-tKt" secondAttribute="bottom" constant="167" id="ST8-tB-SHt"/>
+                            <constraint firstItem="6iL-a7-7h2" firstAttribute="centerX" secondItem="y5t-e6-xt4" secondAttribute="centerX" id="TJb-an-EUN"/>
+                            <constraint firstItem="XRd-SG-tKt" firstAttribute="top" secondItem="6iL-a7-7h2" secondAttribute="bottom" constant="33" id="iGy-bX-NZQ"/>
+                            <constraint firstItem="XRd-SG-tKt" firstAttribute="leading" secondItem="y5t-e6-xt4" secondAttribute="leadingMargin" constant="134" id="jPA-iR-TnQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3G9-Up-9uk"/>
+                                <exclude reference="6qH-JW-3MP"/>
+                                <exclude reference="PSO-hi-uCP"/>
+                                <exclude reference="TJb-an-EUN"/>
+                                <exclude reference="Gxd-Fe-qm5"/>
+                                <exclude reference="Ldg-zg-aDW"/>
+                                <exclude reference="Mh6-jp-SLr"/>
+                                <exclude reference="iGy-bX-NZQ"/>
+                                <exclude reference="jPA-iR-TnQ"/>
+                                <exclude reference="ST8-tB-SHt"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="3G9-Up-9uk"/>
+                                <include reference="6qH-JW-3MP"/>
+                                <include reference="PSO-hi-uCP"/>
+                                <include reference="TJb-an-EUN"/>
+                                <include reference="Gxd-Fe-qm5"/>
+                                <include reference="Ldg-zg-aDW"/>
+                                <include reference="Mh6-jp-SLr"/>
+                                <include reference="iGy-bX-NZQ"/>
+                                <include reference="jPA-iR-TnQ"/>
+                                <include reference="ST8-tB-SHt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="villainImage" destination="6iL-a7-7h2" id="A93-IX-e9W"/>
+                        <outlet property="villainText" destination="XRd-SG-tKt" id="U8E-5c-9Xw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0N8-S5-9zn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2118" y="532"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BA6-xn-yLR">
+            <objects>
+                <navigationController id="YF4-3Z-Gt7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jyo-QV-nbN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="vfU-DP-Lvx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T8d-Tl-mVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="689" y="532"/>
         </scene>
     </scenes>
 </document>
