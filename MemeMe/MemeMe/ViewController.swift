@@ -47,6 +47,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         bottomTextField.delegate = self
         bottomTextField.defaultTextAttributes = memeTextAttributes
         bottomTextField.textAlignment = NSTextAlignment.Center
+        
+        if let memeSet = self.meme {
+            self.imagePickerView.image = memeSet.originalImage
+            self.topTextField.text = memeSet.topText as String
+            self.bottomTextField.text = memeSet.bottomText as String
+            
+            self.shareButton.enabled = true
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -81,6 +89,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func save() {
         (UIApplication.sharedApplication().delegate as!
             AppDelegate).memes.append(self.meme)
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
     func generateMemedImage() -> UIImage {
