@@ -30,11 +30,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         NSStrokeColorAttributeName : UIColor.blackColor(),
         NSForegroundColorAttributeName : UIColor.whiteColor(),
         NSFontAttributeName : UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!,
-        NSStrokeWidthAttributeName : 2.0
+        NSStrokeWidthAttributeName : -1.0
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.shareButton.enabled = false
         
         topTextField.text = TOP
         topTextField.delegate = self
@@ -51,8 +53,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewWillAppear(animated)
         self.subscribeToKeyboardNotifications()
         
-        self.shareButton.enabled = false
-        
         self.cameraButton.enabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)
     }
     
@@ -62,6 +62,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func shareMeme(sender: AnyObject) {
+        createMeme()
         let image = self.meme.memedImage
         let nextController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
         nextController.completionWithItemsHandler = {
@@ -75,7 +76,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let memedImage: UIImage! = generateMemedImage()
         self.meme = Meme(topText: self.topTextField.text!, bottomText: self.bottomTextField.text!,
                         image: self.imagePickerView.image!, memedImage: memedImage)
-        self.shareButton.enabled = true
     }
     
     func save() {
@@ -148,7 +148,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             imagePickerView.image = image
-            self.createMeme()
+            self.shareButton.enabled = true
         }
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
