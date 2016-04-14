@@ -43,38 +43,82 @@
                                     <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NHQ-Ta-NjD">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wzs-lV-4oI">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NHQ-Ta-NjD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="16" y="16" width="108" height="108"/>
+                                                    </variation>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="140" id="Lqk-6u-CEk"/>
-                                                <constraint firstAttribute="height" constant="140" id="bqM-dg-RHF"/>
+                                                <constraint firstItem="NHQ-Ta-NjD" firstAttribute="top" secondItem="Wzs-lV-4oI" secondAttribute="top" constant="8" id="D5z-E7-F2b"/>
+                                                <constraint firstAttribute="bottom" secondItem="NHQ-Ta-NjD" secondAttribute="bottom" constant="8" id="bWd-tt-Lv9"/>
+                                                <constraint firstAttribute="trailing" secondItem="NHQ-Ta-NjD" secondAttribute="trailing" constant="8" id="dMm-df-U2M"/>
+                                                <constraint firstItem="NHQ-Ta-NjD" firstAttribute="leading" secondItem="Wzs-lV-4oI" secondAttribute="leading" constant="8" id="vWC-sr-cun"/>
                                             </constraints>
                                             <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="NHQ-Ta-NjD"/>
+                                                </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="Lqk-6u-CEk"/>
-                                                    <exclude reference="bqM-dg-RHF"/>
+                                                    <exclude reference="D5z-E7-F2b"/>
+                                                    <exclude reference="bWd-tt-Lv9"/>
+                                                    <exclude reference="dMm-df-U2M"/>
+                                                    <exclude reference="vWC-sr-cun"/>
                                                 </mask>
                                             </variation>
-                                            <variation key="widthClass=compact" ambiguous="YES">
-                                                <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="NHQ-Ta-NjD"/>
+                                                </mask>
                                                 <mask key="constraints">
-                                                    <include reference="Lqk-6u-CEk"/>
-                                                    <include reference="bqM-dg-RHF"/>
+                                                    <include reference="D5z-E7-F2b"/>
+                                                    <include reference="bWd-tt-Lv9"/>
+                                                    <include reference="dMm-df-U2M"/>
+                                                    <include reference="vWC-sr-cun"/>
                                                 </mask>
                                             </variation>
-                                        </imageView>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Wzs-lV-4oI" firstAttribute="leading" secondItem="eqS-an-VNm" secondAttribute="leadingMargin" constant="-8" id="Bxe-HL-sCa"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="Wzs-lV-4oI" secondAttribute="bottom" constant="-8" id="Fl7-yA-5Un"/>
+                                    <constraint firstItem="Wzs-lV-4oI" firstAttribute="centerY" secondItem="eqS-an-VNm" secondAttribute="centerY" id="SYc-cA-Vqr"/>
+                                    <constraint firstItem="Wzs-lV-4oI" firstAttribute="top" secondItem="eqS-an-VNm" secondAttribute="topMargin" constant="-8" id="fBk-2d-9Cx"/>
+                                    <constraint firstItem="Wzs-lV-4oI" firstAttribute="centerX" secondItem="eqS-an-VNm" secondAttribute="centerX" id="nzD-nl-jFn"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Wzs-lV-4oI" secondAttribute="trailing" constant="-8" id="wTM-zy-gHI"/>
+                                </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
-                                        <exclude reference="NHQ-Ta-NjD"/>
+                                        <exclude reference="Wzs-lV-4oI"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="Bxe-HL-sCa"/>
+                                        <exclude reference="Fl7-yA-5Un"/>
+                                        <exclude reference="SYc-cA-Vqr"/>
+                                        <exclude reference="fBk-2d-9Cx"/>
+                                        <exclude reference="nzD-nl-jFn"/>
+                                        <exclude reference="wTM-zy-gHI"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="subviews">
-                                        <include reference="NHQ-Ta-NjD"/>
+                                        <include reference="Wzs-lV-4oI"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="Bxe-HL-sCa"/>
+                                        <include reference="Fl7-yA-5Un"/>
+                                        <include reference="SYc-cA-Vqr"/>
+                                        <include reference="fBk-2d-9Cx"/>
+                                        <include reference="nzD-nl-jFn"/>
+                                        <include reference="wTM-zy-gHI"/>
                                     </mask>
                                 </variation>
                                 <connections>
